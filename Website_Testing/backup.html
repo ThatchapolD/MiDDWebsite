@@ -1,0 +1,289 @@
+
+  <nav class="navbar">
+    <div class="brand-Logo">
+        <img src="C:\Users\User\MiDD\MiDDWebsite\Website_Testing\image/Logo.jpg" alt="Logo" class="middlogo">
+    </div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a class="main" href="#head">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+   
+  .middlogo{
+    max-width: 5%;
+    min-width: 50px;
+    height: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    opacity: 1;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: blue;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar-links li a.main{
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+
+@media(max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    } 
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: 0.5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+
+    <!-- Joe Card -->
+    <div id="team"></div>
+        <!-- <h1 class="Team_Header">Team</h1> -->
+        <h3 class="Team_Header">THE TEAM</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="image/Mick.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>Natanan Nitthikrai</h2>
+                        <p class="title">CTO &amp; Co-Founder</p>
+                        <p>Computer Science</p>
+                        <p>natanan.nit@middfinn.com</p>
+                        <a href="https://www.facebook.com/mickey.nithiittikrai" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/mickeyverve/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/natanan-nithiittikrai-73318a231/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+    <!-- Kong card -->
+            <div class="column">
+                <div class="card">
+                    <img src="image/Kong.jpg" alt="Mike" style="width:100%" class="responsive">
+                    <div class="container">
+                        <h2>Thatchapol Damrongmongkolgul</h2>
+                        <p class="title">COO &amp; Co-Founder</p>
+                        <p>Robotic & Automation Engineering</p>
+                        <p>thatchapol@middfinn.com</p>
+                        <a href="https://www.facebook.com/ThatchapolD/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/kong.1932/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/thatchapol-damrongmongkolgul-750aa1227/" class="fa fa-linkedin"></a>
+                        <a href="https://www.td1932prv.net/" class="fa fa-globe"></a>
+                    </div>
+                </div>
+            </div>
+    <!-- Mickey Card     -->
+            <div class="column">
+                <div class="card">
+                    <img src="image/Joe.jpg" alt="John" style="width:100%" class="responsive">
+                    <div class="container">
+                        <h2>Sutach Sripochai</h2>
+                        <p class="title">CEO &amp; Co-Founder</p>
+                        <p>Computer Engeneering</p>
+                        <p>sutach.srp2545@middfinn.com</p>
+                        <a href="https://www.facebook.com/jojo.sripochai" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/joe_sutach/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/sutach-sripochai-49864021b/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+    <!-- Peace Card         -->
+            <div class="column">
+                <div class="card">
+                    <img src="image/Peace.jpg" alt="Mike" style="width:100%" class="responsive">
+                    <div class="container">
+                        <h2>Pichamon Mahanukul</h2>
+                        <p class="title">CMO &amp; Co-Founder</p>
+                        <p>International Bussiness</p>
+                        <p>pichamon_peace@middfinn.com</p>
+                        <a href="https://www.facebook.com/peace.mahanukul" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/p3acem/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/pichamon-mahanukul-78a720226/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+    <!-- Sato Card        -->
+            <div class="column">
+                <div class="card">
+                    <img src="image/Sato.jpg" alt="Mike" style="width:100%" class="responsive">
+                    <div class="container">
+                        <h2>Satoshi Ota</h2>
+                        <p class="title">CIO &amp; Co-Founder</p>
+                        <p>International Bussiness</p>
+                        <p>satoshi.ota@middfinn.com</p>
+                        <a href="https://www.facebook.com/satoshi.ota.315" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/sato_oshi/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/satoshi-ota-4a4a9a225/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CSS-->
+        /* Team page */
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 18px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 20px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.Team_Header{   
+    text-align: center;
+    box-sizing: inherit;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+    padding: 13px;
+}
+/*-----------------------------------------------------------------*/
+
+/* Social Media Icon */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-globe{
+    background: #808080;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 500px;
+    width: 50px;
+}
+/*-----------------------------------------------------------------*/
