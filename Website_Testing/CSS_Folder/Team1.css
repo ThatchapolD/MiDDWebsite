@@ -56,8 +56,8 @@ img {
   flex: 0 0 100%;
   max-width: 100%;
   width: 100%;
-  margin-bottom: 80px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 0px;
   text-align: center;
   padding: 13px;
   background-color: rgb(0, 0, 0);
@@ -76,7 +76,7 @@ img {
   left: 0;
   position: absolute;
   height: 3px;
-  right: 32%;
+  right: 0%;
   background-color: #50c5fc;
   bottom: -5px;
 }
